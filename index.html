@@ -396,33 +396,58 @@
       </div>
       <div class="projects-grid">
 
-        <div class="project-card featured">
-          <div class="project-badge">VinSmartFuture · GreenSM · Current</div>
-          <h3>Payment &amp; Partner Data Reconciliation System</h3>
-          <p>PIC for financial data reconciliation pipelines on GreenSM — built ETL to aggregate and cross-validate transaction data across multiple payment gateways, insurance providers, and operating partners, ensuring accuracy and consistency on every reconciliation cycle.</p>
-          <div class="project-metrics">
-            <div class="metric"><span>3+</span>Payment Gateways</div>
-            <div class="metric"><span>Daily</span>Reconciliation</div>
-            <div class="metric"><span>99%+</span>Accuracy</div>
+        <div class="project-card featured project-split">
+          <div class="project-main">
+            <div class="project-badge">VinSmartFuture · GreenSM · Current</div>
+            <h3>Payment &amp; Partner Data Reconciliation System</h3>
+            <p>PIC for financial data reconciliation pipelines on GreenSM — built ETL to aggregate and cross-validate transaction data across multiple payment gateways, insurance providers, and operating partners, ensuring accuracy and consistency on every reconciliation cycle.</p>
+            <div class="project-metrics">
+              <div class="metric"><span>3+</span>Payment Gateways</div>
+              <div class="metric"><span>Daily</span>Reconciliation</div>
+              <div class="metric"><span>99%+</span>Accuracy</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Apache Spark</span><span class="tag">Airflow</span><span class="tag">DBT</span>
+              <span class="tag">AWS S3</span><span class="tag">AWS Glue</span><span class="tag">Python</span><span class="tag">ETL</span>
+            </div>
           </div>
-          <div class="tags">
-            <span class="tag">Apache Spark</span><span class="tag">Airflow</span><span class="tag">DBT</span>
-            <span class="tag">AWS S3</span><span class="tag">AWS Glue</span><span class="tag">Python</span><span class="tag">ETL</span>
+          <div class="project-enhance">
+            <div class="enhance-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Key Enhancement
+            </div>
+            <h4>Dynamic Partner Onboarding</h4>
+            <p>Pipeline architecture is config-driven — new payment gateways, insurance providers, or partners can be plugged in without rewriting ETL logic. Each partner's reconciliation rules and data schemas are declaratively defined, making the system open and extensible by design.</p>
+            <div class="enhance-pill">Open for new partners</div>
+            <div class="enhance-pill">Config-driven ETL</div>
+            <div class="enhance-pill">Zero pipeline rewrite</div>
           </div>
         </div>
 
-        <div class="project-card featured">
-          <div class="project-badge">VinSmartFuture · GreenSM · Current</div>
-          <h3>Real-time Driver Statistics &amp; CDC to BigQuery</h3>
-          <p>Built real-time streaming pipeline with Apache Flink tracking driver trip stats, earnings, and performance metrics. Deployed CDC pipelines synchronizing all GreenSM app events into BigQuery for analytics and reporting.</p>
-          <div class="project-metrics">
-            <div class="metric"><span>Real-time</span>Driver Stats</div>
-            <div class="metric"><span>CDC</span>App → BigQuery</div>
-            <div class="metric"><span>&lt;1s</span>Latency</div>
+        <div class="project-card featured project-split">
+          <div class="project-main">
+            <div class="project-badge">VinSmartFuture · GreenSM · Current</div>
+            <h3>Real-time Driver Statistics &amp; CDC to BigQuery</h3>
+            <p>Built real-time streaming pipeline with Apache Flink tracking driver trip stats, earnings, and performance metrics. Deployed CDC pipelines synchronizing all GreenSM app events into BigQuery for analytics and reporting.</p>
+            <div class="project-metrics">
+              <div class="metric"><span>Real-time</span>Driver Stats</div>
+              <div class="metric"><span>CDC</span>App → BigQuery</div>
+              <div class="metric"><span>&lt;1s</span>Latency</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Apache Flink</span><span class="tag">CDC</span><span class="tag">BigQuery</span>
+              <span class="tag">DBT</span><span class="tag">Debezium</span><span class="tag">Kafka</span><span class="tag">Python</span>
+            </div>
           </div>
-          <div class="tags">
-            <span class="tag">Apache Flink</span><span class="tag">CDC</span><span class="tag">BigQuery</span>
-            <span class="tag">DBT</span><span class="tag">Debezium</span><span class="tag">Kafka</span><span class="tag">Python</span>
+          <div class="project-enhance enhance-green">
+            <div class="enhance-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Key Enhancement
+            </div>
+            <h4>T-1 Batch → Real-time Migration</h4>
+            <p>Driver statistics previously ran on end-of-day (T-1) batch jobs — dashboards were always 24hrs stale. Migrated the entire pipeline to Apache Flink streaming so driver earnings, trip counts, and KPIs update in under a second, enabling live operational decisions.</p>
+            <div class="enhance-pill">Was: T-1 batch (24hr delay)</div>
+            <div class="enhance-pill enhance-pill-accent">Now: &lt;1s real-time</div>
           </div>
         </div>
 
