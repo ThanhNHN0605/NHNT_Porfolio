@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ngo Huu Nhat Thanh — Senior Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">NHN<span class="accent">T</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="about" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-tag">Senior Data Engineer</p>
+        <h1>Ngo Huu<br /><span class="accent">Nhat Thanh</span></h1>
+        <p class="hero-desc">
+          Building scalable data pipelines, real-time streaming systems, and cloud data infrastructure.
+          Currently at <strong>HDBank</strong>, processing 10M+ daily transactions.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat"><span class="stat-num">10M+</span><span class="stat-label">Daily Transactions</span></div>
+          <div class="stat"><span class="stat-num">99%+</span><span class="stat-label">Data Accuracy</span></div>
+          <div class="stat"><span class="stat-num">60%</span><span class="stat-label">Pipeline Speed Gains</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-ring">
+          <div class="avatar">
+            <span>NT</span>
+          </div>
+        </div>
+        <div class="floating-badge badge-1">Apache Spark</div>
+        <div class="floating-badge badge-2">Kafka</div>
+        <div class="floating-badge badge-3">AWS</div>
+        <div class="floating-badge badge-4">Python</div>
+      </div>
+    </div>
+    <a href="#skills" class="scroll-down" aria-label="Scroll down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Technical Expertise</p>
+        <h2>Skills &amp; <span class="accent">Technologies</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Programming</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">AsyncIO</span>
+            <span class="tag">Multiprocessing</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">SQL</span>
+            <span class="tag">C++</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Cloud &amp; Infrastructure</h3>
+          <div class="tags">
+            <span class="tag highlight">AWS S3</span>
+            <span class="tag highlight">Lambda</span>
+            <span class="tag highlight">Redshift</span>
+            <span class="tag highlight">Glue</span>
+            <span class="tag highlight">Step Functions</span>
+            <span class="tag">GCP</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Big Data &amp; Streaming</h3>
+          <div class="tags">
+            <span class="tag highlight">Apache Spark</span>
+            <span class="tag highlight">Apache Kafka</span>
+            <span class="tag">Hadoop</span>
+            <span class="tag">Airflow</span>
+            <span class="tag">Snowflake</span>
+            <span class="tag">DBT</span>
+            <span class="tag">Iceberg</span>
+            <span class="tag">Trino</span>
+            <span class="tag">Debezium</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Databases</h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Oracle</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>Web Scraping</h3>
+          <div class="tags">
+            <span class="tag">Selenium</span>
+            <span class="tag">Puppeteer</span>
+            <span class="tag">Playwright</span>
+            <span class="tag">BeautifulSoup</span>
+            <span class="tag">Scrapy</span>
+            <span class="tag">Proxy Rotation</span>
+            <span class="tag">CAPTCHA Solving</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+          </div>
+          <h3>APIs &amp; Frameworks</h3>
+          <div class="tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Flask</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Facebook Graph API</span>
+            <span class="tag">TikTok API</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Career Path</p>
+        <h2>Work <span class="accent">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Oct 2025 – Present</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior Data Engineer</h3>
+                <p class="company">HDBank <span class="location">· Ho Chi Minh City</span></p>
+              </div>
+              <span class="badge-current">Current</span>
+            </div>
+            <ul>
+              <li>Spearheaded enterprise-scale migration of Oracle → AWS Redshift for 10M+ daily transactions.</li>
+              <li>Orchestrated core banking migration from Symbor to Thought Machine with 99%+ data accuracy.</li>
+              <li>Designed real-time streaming infrastructure using Spark Structured Streaming + Kafka CDC, reducing latency from hours to seconds.</li>
+              <li>Mentored team on cloud data engineering, streaming architectures, and performance tuning.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Apache Spark</span><span class="tag">Kafka</span>
+              <span class="tag">Redshift</span><span class="tag">Oracle</span><span class="tag">Airflow</span><span class="tag">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">May 2025 – Oct 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Middle Data Engineer</h3>
+                <p class="company">HDBank <span class="location">· Ho Chi Minh City</span></p>
+              </div>
+            </div>
+            <ul>
+              <li>Led team designing scalable ETL pipelines on AWS with Redshift as primary data warehouse.</li>
+              <li>Architected real-time data streaming with Spark Structured Streaming and Kafka CDC.</li>
+              <li>Reduced processing time via incremental loading, partition pruning, and parallel processing.</li>
+              <li>Implemented data quality frameworks ensuring 99%+ accuracy and pipeline reliability.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python AsyncIO</span><span class="tag">PySpark</span><span class="tag">Kafka</span>
+              <span class="tag">Redshift</span><span class="tag">Docker</span><span class="tag">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Oct 2024 – May 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Engineer</h3>
+                <p class="company">Yes4All <span class="location">· Ho Chi Minh City</span></p>
+              </div>
+            </div>
+            <ul>
+              <li>Built scalable web scrapers processing 500K+ data points daily from Amazon, Wayfair, Walmart, TikTok, and Facebook.</li>
+              <li>Implemented advanced anti-detection: proxy rotation, browser fingerprinting avoidance, CAPTCHA solving.</li>
+              <li>Built CDC system with Debezium + Kafka, reducing DB load by 60%.</li>
+              <li>Designed e-commerce sales forecasting pipeline achieving 80%+ prediction accuracy.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">Scrapy</span>
+              <span class="tag">Debezium</span><span class="tag">Kafka</span><span class="tag">Spark</span><span class="tag">Airflow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jun 2023 – Sep 2024</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Engineer</h3>
+                <p class="company">Cognita AG (Germany) <span class="location">· Remote</span></p>
+              </div>
+            </div>
+            <ul>
+              <li>Processed 100,000+ newspaper PDFs/month via OCR → XML pipeline using AWS Lambda + S3.</li>
+              <li>Deployed article classification model automating 10,000+ categorizations daily, saving 200 hours/month.</li>
+              <li>Reduced manual data operations by 60% through automated Google Sheets → BigQuery pipelines.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">AWS Lambda</span>
+              <span class="tag">Redshift</span><span class="tag">BigQuery</span><span class="tag">Flask</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Sep 2024 – Dec 2024</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Engineer / NLP Engineer</h3>
+                <p class="company">SudoCode 2024 <span class="location">· Ho Chi Minh City</span></p>
+              </div>
+            </div>
+            <ul>
+              <li>Built AI-powered customer-care chatbot using RAG, boosting customer engagement by 40%.</li>
+              <li>Reduced average query resolution time by 50% via real-time response pipeline.</li>
+              <li>Presented project at Google DevFest Ho Chi Minh City.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">LlamaIndex</span><span class="tag">Qdrant</span>
+              <span class="tag">Redis</span><span class="tag">Docker</span><span class="tag">AI Agent</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Featured Work</p>
+        <h2>Key <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-badge">Banking · Real-time</div>
+          <h3>Core Banking Data Migration &amp; Streaming</h3>
+          <p>Enterprise-scale Oracle → AWS Redshift migration with real-time Spark Structured Streaming + Kafka CDC pipeline. Processes 10M+ daily banking transactions with &lt;1s latency and 99%+ accuracy.</p>
+          <div class="project-metrics">
+            <div class="metric"><span>10M+</span>Daily Transactions</div>
+            <div class="metric"><span>99%+</span>Data Accuracy</div>
+            <div class="metric"><span>&lt;1s</span>Latency</div>
+          </div>
+          <div class="tags">
+            <span class="tag">Apache Spark</span><span class="tag">Kafka</span><span class="tag">AWS Redshift</span>
+            <span class="tag">Oracle</span><span class="tag">Airflow</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">E-commerce · Scraping</div>
+          <h3>E-commerce Data Collection Platform</h3>
+          <p>Scalable web scraping system collecting 500K+ data points daily from Amazon, Wayfair, Walmart, TikTok, and Facebook with advanced anti-detection, proxy rotation, and CAPTCHA solving.</p>
+          <div class="project-metrics">
+            <div class="metric"><span>500K+</span>Daily Data Points</div>
+            <div class="metric"><span>95%+</span>Uptime</div>
+            <div class="metric"><span>60%</span>Faster ETL</div>
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">Scrapy</span>
+            <span class="tag">Async I/O</span><span class="tag">Apache Spark</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">Real-time · CDC</div>
+          <h3>CDC-Based Real-Time Data Integration</h3>
+          <p>Change Data Capture system using Debezium + Kafka to synchronize multiple databases in real-time. Achieved 95%+ accuracy with minimal latency and 60% reduction in database load.</p>
+          <div class="project-metrics">
+            <div class="metric"><span>95%+</span>Accuracy</div>
+            <div class="metric"><span>60%</span>DB Load Reduction</div>
+          </div>
+          <div class="tags">
+            <span class="tag">Debezium</span><span class="tag">Kafka</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">ML · Forecasting</div>
+          <h3>E-commerce Sales Forecasting Pipeline</h3>
+          <p>Scalable ETL pipeline integrating batch and real-time processing for a sales forecasting model. Integrated Spark Structured Streaming + Airflow to automate the full ML workflow.</p>
+          <div class="project-metrics">
+            <div class="metric"><span>80%+</span>Prediction Accuracy</div>
+          </div>
+          <div class="tags">
+            <span class="tag">Spark</span><span class="tag">Airflow</span><span class="tag">DBT</span>
+            <span class="tag">Iceberg</span><span class="tag">BigQuery</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">NLP · AI</div>
+          <h3>Customer-Care RAG Chatbot</h3>
+          <p>End-to-end AI chatbot for e-commerce using Retrieval-Augmented Generation (RAG). Enhanced customer engagement by 40% and cut resolution time by 50%. Presented at Google DevFest HCMC.</p>
+          <div class="project-metrics">
+            <div class="metric"><span>40%</span>Engagement Boost</div>
+            <div class="metric"><span>50%</span>Faster Resolution</div>
+          </div>
+          <div class="tags">
+            <span class="tag">LlamaIndex</span><span class="tag">Qdrant</span><span class="tag">Redis</span><span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge">Media · OCR</div>
+          <h3>Global Newspaper ETL Pipeline</h3>
+          <p>OCR-powered system transforming 100,000+ newspaper PDFs/month into structured XML via AWS Lambda + S3. Deployed article classification model automating 10,000+ categorizations daily.</p>
+          <div class="project-metrics">
+            <div class="metric"><span>100K+</span>PDFs/Month</div>
+            <div class="metric"><span>99%</span>Data Accuracy</div>
+            <div class="metric"><span>200hrs</span>Saved/Month</div>
+          </div>
+          <div class="tags">
+            <span class="tag">TensorFlow</span><span class="tag">AWS Lambda</span><span class="tag">S3</span><span class="tag">Redshift</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Academic Background</p>
+        <h2><span class="accent">Education</span></h2>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div class="edu-info">
+          <h3>University of Science — VNU Ho Chi Minh City</h3>
+          <p class="edu-degree">Bachelor of Information Technology, Data Science</p>
+          <p class="edu-date">September 2020 – September 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Let's Connect</p>
+        <h2>Get in <span class="accent">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:nt0605work@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">nt0605work@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:0901469383" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value">0901 469 383</p>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/ngo-huu-nhat-thanh" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">ngo-huu-nhat-thanh</p>
+          </div>
+        </a>
+        <a href="https://github.com/nhatthanh" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/nhatthanh</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Ngo Huu Nhat Thanh · Senior Data Engineer · Ho Chi Minh City, Vietnam</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
