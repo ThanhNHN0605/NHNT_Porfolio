@@ -335,17 +335,32 @@
       <div class="projects-grid">
 
         <div class="project-card featured">
-          <div class="project-badge">Ride-hailing · Current</div>
-          <h3>GreenSM — Data Reconciliation &amp; Real-time Platform</h3>
-          <p>PIC for end-to-end data infrastructure on VinSmartFuture's GreenSM ride-hailing app. Built reconciliation ETL across payment gateways, insurance, and partners; real-time driver statistics with Apache Flink; and CDC pipelines syncing all app events to BigQuery.</p>
+          <div class="project-badge">VinSmartFuture · GreenSM · Current</div>
+          <h3>Payment &amp; Partner Data Reconciliation System</h3>
+          <p>PIC cho luồng đối soát dữ liệu tài chính của GreenSM — xây dựng ETL pipeline tổng hợp và so khớp dữ liệu từ nhiều cổng thanh toán, nhà cung cấp bảo hiểm, và đối tác vận hành. Đảm bảo tính chính xác và nhất quán dữ liệu tài chính theo từng chu kỳ đối soát.</p>
           <div class="project-metrics">
-            <div class="metric"><span>3</span>Data Domains</div>
-            <div class="metric"><span>Real-time</span>Driver Stats</div>
-            <div class="metric"><span>CDC</span>→ BigQuery</div>
+            <div class="metric"><span>3+</span>Payment Gateways</div>
+            <div class="metric"><span>Daily</span>Reconciliation</div>
+            <div class="metric"><span>99%+</span>Accuracy</div>
           </div>
           <div class="tags">
-            <span class="tag">Apache Flink</span><span class="tag">Apache Spark</span><span class="tag">Airflow</span>
-            <span class="tag">AWS</span><span class="tag">BigQuery</span><span class="tag">CDC</span><span class="tag">Python</span>
+            <span class="tag">Apache Spark</span><span class="tag">Airflow</span><span class="tag">AWS S3</span>
+            <span class="tag">AWS Glue</span><span class="tag">Python</span><span class="tag">ETL</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-badge">VinSmartFuture · GreenSM · Current</div>
+          <h3>Real-time Driver Statistics &amp; CDC to BigQuery</h3>
+          <p>Xây dựng luồng streaming real-time thống kê hành trình, thu nhập và hiệu suất tài xế bằng Apache Flink. Song song triển khai CDC pipeline đồng bộ toàn bộ sự kiện từ app GreenSM về BigQuery phục vụ analytics và reporting.</p>
+          <div class="project-metrics">
+            <div class="metric"><span>Real-time</span>Driver Stats</div>
+            <div class="metric"><span>CDC</span>App → BigQuery</div>
+            <div class="metric"><span>&lt;1s</span>Latency</div>
+          </div>
+          <div class="tags">
+            <span class="tag">Apache Flink</span><span class="tag">CDC</span><span class="tag">BigQuery</span>
+            <span class="tag">Debezium</span><span class="tag">Kafka</span><span class="tag">Python</span>
           </div>
         </div>
 
