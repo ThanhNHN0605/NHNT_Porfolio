@@ -133,18 +133,17 @@ if (tagEl) {
 }
 
 // ===== COUNTER ANIMATION =====
-function animateCounter(el, target) {
-  let current = 0;
+function animateCounter(el, target, suffix = '') {
   const duration = 1200;
   const start = performance.now();
   function step(now) {
     const elapsed = now - start;
     const progress = Math.min(elapsed / duration, 1);
     const ease = 1 - Math.pow(1 - progress, 3);
-    current = Math.round(ease * target);
-    el.textContent = current;
+    const current = Math.round(ease * target);
+    el.textContent = current + suffix;
     if (progress < 1) requestAnimationFrame(step);
-    else el.textContent = target;
+    else el.textContent = target + suffix;
   }
   requestAnimationFrame(step);
 }
@@ -157,7 +156,7 @@ const statsObserver = new IntersectionObserver((entries) => {
       nums.forEach(n => {
         const raw = n.textContent;
         const num = parseInt(raw.replace(/\D/g, ''));
-        const suffix = raw.replace(/[\d]/g, '');
+        const suffix = raw.replace(/\d/g, '');
         if (!isNaN(num)) animateCounter(n, num, suffix);
       });
       statsObserver.unobserve(e.target);
