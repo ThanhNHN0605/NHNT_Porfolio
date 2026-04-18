@@ -133,16 +133,23 @@ if (tagEl) {
 }
 
 // ===== COUNTER ANIMATION =====
-function animateCounter(el, target, suffix = '') {
+function animateCounter(el, target) {
   let current = 0;
-  const step = Math.ceil(target / 60);
-  const timer = setInterval(() => {
-    current = Math.min(current + step, target);
-    el.textContent = current + suffix;
-    if (current >= target) clearInterval(timer);
-  }, 16);
+  const duration = 1200;
+  const start = performance.now();
+  function step(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    current = Math.round(ease * target);
+    el.textContent = current;
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = target;
+  }
+  requestAnimationFrame(step);
 }
 
+// Hero stats counter
 const statsObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -160,6 +167,22 @@ const statsObserver = new IntersectionObserver((entries) => {
 
 const statsEl = document.querySelector('.hero-stats');
 if (statsEl) statsObserver.observe(statsEl);
+
+// Metric band counters
+const metricObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.metric-big[data-target]').forEach(el => {
+        const target = parseInt(el.dataset.target);
+        if (!isNaN(target)) animateCounter(el, target);
+      });
+      metricObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+const metricsBand = document.querySelector('.metrics-band');
+if (metricsBand) metricObserver.observe(metricsBand);
 
 // ===== CURSOR GLOW =====
 const glow = document.createElement('div');
